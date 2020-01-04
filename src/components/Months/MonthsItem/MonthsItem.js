@@ -1,5 +1,6 @@
 // Core
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 
 // Components
 import Users from "../../Users/Users";
@@ -34,5 +35,10 @@ function MonthsItem(props) {
         </li>
     )
 }
+
+MonthsItem.propTypes = {
+    title: PropTypes.string,
+    data: PropTypes.array
+};
 
 export default MonthsItem;

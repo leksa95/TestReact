@@ -36,11 +36,7 @@ h1 {
 .user-list {
   background: #fff;
   position: relative;
-  border: 1px solid #ccc;
-  border-radius: 9px;
-  width: 100%;
-  left: 20px;
-  top: 20px;
+  width: max-content;
   padding: 20px 20px 20px 40px;
 
   &__item {

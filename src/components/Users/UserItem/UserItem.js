@@ -1,5 +1,6 @@
 // Core
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function UserItem(props) {
     const {id, firstName, lastName, dob} = props;
@@ -11,5 +12,12 @@ function UserItem(props) {
         </li>
     )
 }
+
+UserItem.propTypes = {
+    id: PropTypes.string,
+    firstName: PropTypes.string,
+    lastName: PropTypes.string,
+    dob: PropTypes.string
+};
 
 export default UserItem;
